@@ -25,7 +25,7 @@ Use `llm -m reka-flash "prompt"` to run prompts against `reka-flash`.
 
 The other models supported are `reka-core` and `reka-edge`.
 
-Core is the most expensive, then Flash, then Edge is cheapest. [Pricing here]().
+Core is the most expensive, then Flash, then Edge is cheapest. [Pricing here](https://www.reka.ai/reka-api).
 
 ## Development
 
