@@ -5,7 +5,7 @@
 [![Tests](https://github.com/simonw/llm-reka/actions/workflows/test.yml/badge.svg)](https://github.com/simonw/llm-reka/actions/workflows/test.yml)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/simonw/llm-reka/blob/main/LICENSE)
 
-Access Reka models via the Reka API
+Access [Reka](https://www.reka.ai/) models via the Reka API
 
 ## Installation
 
