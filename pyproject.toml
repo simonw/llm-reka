@@ -1,0 +1,26 @@
+[project]
+name = "llm-reka"
+version = "0.1"
+description = "Access Reka models via the Reka API"
+readme = "README.md"
+authors = [{name = "Simon Willison"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "llm",
+    "reka-api"
+]
+
+[project.urls]
+Homepage = "https://github.com/simonw/llm-reka"
+Changelog = "https://github.com/simonw/llm-reka/releases"
+Issues = "https://github.com/simonw/llm-reka/issues"
+CI = "https://github.com/simonw/llm-reka/actions"
+
+[project.entry-points.llm]
+reka = "llm_reka"
+
+[project.optional-dependencies]
+test = ["pytest"]
