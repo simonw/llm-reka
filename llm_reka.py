@@ -22,9 +22,19 @@ class Reka(llm.Model):
 
     def execute(self, prompt, stream, response, conversation):
         reka.API_KEY = llm.get_key("", "reka", "LLM_REKA_KEY")
+        conversation_history = []
+        if conversation:
+            for response in conversation.responses:
+                conversation_history.append(
+                    {
+                        "type": "human",
+                        "text": response.prompt.prompt,
+                    }
+                )
+                conversation_history.append({"type": "model", "text": response.text()})
         response = reka.chat(
             human=prompt.prompt,
-            # conversation_history=conversation_history,
+            conversation_history=conversation_history,
         )
         yield response["text"]
 
