@@ -1,6 +1,6 @@
 [project]
 name = "llm-reka"
-version = "0.1"
+version = "0.1a0"
 description = "Access Reka models via the Reka API"
 readme = "README.md"
 authors = [{name = "Simon Willison"}]
