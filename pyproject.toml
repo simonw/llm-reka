@@ -10,7 +10,9 @@ classifiers = [
 ]
 dependencies = [
     "llm",
-    "reka-api"
+    "reka-api",
+    "httpx",
+    "httpx-sse"
 ]
 
 [project.urls]
